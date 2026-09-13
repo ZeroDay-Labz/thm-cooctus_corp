@@ -50,6 +50,10 @@ Starting with no credentials, this engagement chains exposed credentials, a weak
 | HIGH | Kerberoastable service account with weak password | Weak Policy |
 | MODERATE | Sensitive information disclosure via web backup file | Info Disclosure |
 
+## Business Impact
+
+Full domain compromise is the most severe outcome of an internal assessment. An attacker in this position can read, modify, or destroy any data in the environment, create persistent backdoor accounts, disable security controls, and deploy ransomware domain-wide. Because every credential in the directory was recovered, remediation requires more than patching a single host: it requires full credential rotation and correction of the underlying AD misconfigurations.
+
 ## Report
 
 The full findings report, including the detailed attack narrative, evidence, CVSS scoring, and remediation guidance, is available in this repository:
